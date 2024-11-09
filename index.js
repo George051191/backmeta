@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Обработчик POST-запроса
-app.post('/incoming', async (req, res) => {
+app.post('/', async (req, res) => {
     const { name, utm, utm_source } = req.body;
    console.log(req.body)
     // Проверка наличия поля name
